@@ -6,11 +6,11 @@
  * file or other location.
  *
  * Return: 0 as it is a simple excerise of running
- * functions for beginner programming
+ * functions for beginner programming - always SUCCESS
  */
 
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle.");
+	puts("\nProgramming is like building a multilingual puzzle.");
 	return (0);
 }
