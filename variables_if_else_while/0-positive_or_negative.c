@@ -6,7 +6,7 @@
  */
 
 /*
- *main - once a random number is set up, an if function will
+ * main - once a random number is set up, an if function will
  * determine if the number is positive, negative or zero.
  *
  * Return 0 as this is an exercise to show outputs will always
