@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main - once a random number is set up, an if function will
  * determine if the number is positive, negative or zero.
  *
