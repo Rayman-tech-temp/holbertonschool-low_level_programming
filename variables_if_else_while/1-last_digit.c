@@ -31,7 +31,7 @@ int main(void)
 	else if (lastDigit == 0)
 	{
 	printf("Last digit of %d is ", n);
-	printf("%d and is 0\n");
+	printf("%d and is 0\n", lastDigit);
 	}
 	return (0);
 }
