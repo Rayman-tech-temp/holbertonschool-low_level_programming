@@ -19,7 +19,11 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* the beginnning of my answer */
+
+	/*
+	 * the beginnning of my answer
+ 	 */
+
 	if (n > 0)
 	{
 	printf("%d is positive\n", n);
