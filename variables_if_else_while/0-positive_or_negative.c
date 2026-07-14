@@ -2,12 +2,15 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * required headers for printf and true random
+ * required headers for true random and printf.
  */
 
 /*
  *main - once a random number is set up, an if function will
- * determine if the number is positive, negative or zero
+ * determine if the number is positive, negative or zero.
+ *
+ * Return 0 as this is an exercise to show outputs will always
+ * return as success.
  */
 int main(void)
 {
