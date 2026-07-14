@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main - once a random number is set up, an if function will
  * determine if the last digit greater than 5, less than six or is zero.
  *
- * time.h and stdlib.h are used to establish random seeded from time.
- *
  * Return: 0 as this is an exercise to show outputs will always
- * return as success.
+ * return a success.
+ *
+ * time.h and stdlib.h are used to establish random seeded from time.
  */
 
 int main(void)
