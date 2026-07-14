@@ -12,6 +12,7 @@
  * Return 0 as this is an exercise to show outputs will always
  * return as success.
  */
+
 int main(void)
 {
 	int n;
