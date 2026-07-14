@@ -2,12 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * required headers for true random and printf.
- */
-
-/*
  * main - once a random number is set up, an if function will
  * determine if the number is positive, negative or zero.
+ *
+ * time.h and stdlib.h are used to establish random seeded from time.
  *
  * Return: 0 as this is an exercise to show outputs will always
  * return as success.
