@@ -6,7 +6,7 @@
  * Return:
  */
 
-void main(void)
+int void main(void)
 {
 	int input;
 
