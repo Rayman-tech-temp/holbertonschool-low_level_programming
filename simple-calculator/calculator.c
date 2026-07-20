@@ -9,10 +9,11 @@
 
 int addition(int a, int b)
 {
-        int result = 0;
-
-        result = a + b;
-        return (result);
+	return (a + b);
+}
+int subtraction(int a, int b)
+{
+	return (a - b);
 }
 
 /**
@@ -34,12 +35,18 @@ int main(void)
 		scanf("%d", &choice);
 		if (choice == 1)
 		{
-			printf("A:");
+			printf("A: ");
 			scanf("%d", &numA);
-			printf("B:");
+			printf("B: ");
 			scanf("%d", &numB);
 			numC = addition(numA, numB);
 			printf("Result: %d", numC);
+		} else if (choice == 2)
+		{
+			scanf("A: %d", &numA);
+			scanf("B: %d", &numB);
+			numC = subtraction(numA, numB);
+			printf("Result: %d", numC)
 		} else if (choice > 4)
 		{
 			printf("Invalid choice\n");
