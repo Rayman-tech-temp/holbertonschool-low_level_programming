@@ -4,18 +4,34 @@
  * addition - a simple addition function for calculator.
  *
  * Returns: int Result variable that is a sum.
- *
  */
 
 int addition(int a, int b)
 {
 	return (a + b);
 }
+
+/**
+ * subtraction - a simple addition function for calculator.
+ *
+ * Returns: int Result variable that is subtracted.
+ */
+
 int subtraction(int a, int b)
 {
 	return (a - b);
 }
 
+/**
+ * addition - a simple addition function for calculator.
+ *
+ * Returns: int Result variable that is a sum.
+ */
+
+int multiplication(int a, int b)
+{
+	return (a * b);
+}
 /**
  * main - the interactive terminal interface.
  *
@@ -35,10 +51,8 @@ int main(void)
 		scanf("%d", &choice);
 		if (choice == 1)
 		{
-			printf("A: ");
-			scanf("%d", &numA);
-			printf("B: ");
-			scanf("%d", &numB);
+			scanf("A: %d", &numA);
+			scanf("B: %d", &numB);
 			numC = addition(numA, numB);
 			printf("Result: %d", numC);
 		} else if (choice == 2)
@@ -47,7 +61,13 @@ int main(void)
 			scanf("B: %d", &numB);
 			numC = subtraction(numA, numB);
 			printf("Result: %d", numC);
-		} else if (choice > 4)
+		} else if (choice == 4)
+		{
+			scanf("A: %d", &numA);
+			scanf("B: %d", &numB);
+			numC = multiplication(numA, numB);
+			printf("Result: %d", numC)
+		}  else if (choice > 4)
 		{
 			printf("Invalid choice\n");
 		} else if (choice == 0)
