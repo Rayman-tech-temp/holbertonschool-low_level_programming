@@ -15,7 +15,7 @@ int main(void)
 	putchar(letter);
 	letter++;
 	}
-	while (letter < 123)
+	while (letter < 123);
 	putchar('\n');
 	return (0);
 }
