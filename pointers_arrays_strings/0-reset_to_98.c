@@ -1,7 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 
-void reset_to_98(int* ptr)
+/**
+ * reset_to_98 - using a pointer to change
+ * the value of a variable pass in this
+ * function.
+ *
+ * @ptr: a passed variable that holds the ddress to alter
+ * the held value there
+ *
+ * Return: nothing
+ */
+
+void reset_to_98(int *ptr)
 {
 	*ptr = 98;
 }
@@ -11,6 +22,7 @@ void reset_to_98(int* ptr)
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
 	int n;
