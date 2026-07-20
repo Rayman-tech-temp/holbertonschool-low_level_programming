@@ -1,5 +1,19 @@
-#include "main.h"
 #include <stdio.h>
+
+/**
+ * addition - a simple addition function for calculator.
+ *
+ * Returns: int Result variable that is a sum.
+ *
+ */
+
+int addition(int a, int b)
+{
+        int result = 0;
+
+        result = a + b;
+        return (result);
+}
 
 /**
  * main - the interactive terminal interface.
