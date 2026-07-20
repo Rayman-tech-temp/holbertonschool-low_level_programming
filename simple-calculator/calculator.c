@@ -6,9 +6,9 @@
  * Return:
  */
 
-int void main(void)
+int main(void)
 {
-	int input;
+	int input=9;
 
 	do {
 		printf("1) Add\n2) Subtract\n3) Multiply\n4) Divide\n0) Quit\nChoice:");
