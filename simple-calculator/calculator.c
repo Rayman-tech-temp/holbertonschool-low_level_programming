@@ -89,7 +89,7 @@ int main(void)
 			} else
 			{
 				numC = division(numA, numB);
-				printf("Result: %d", numbC);
+				printf("Result: %d", numC);
 			}
 		} else if (choice > 4)
 		{
