@@ -12,6 +12,7 @@ int main(void)
 	int choice = 9;
 	int numA = 0;
 	int numB = 0;
+	int numC = 0;
 
 	printf("Welcome to Simple Calculator!\n");
 	do {
@@ -23,7 +24,8 @@ int main(void)
 			scanf("%d", &numA);
 			printf("B:");
 			scanf("%d", &numB);
-			("Result: %d", addition(numA, numB));
+			numC = addition(numA, numB);
+			printf("Result: %d", numC;
 		} else if (choice > 4)
 		{
 			printf("Invalid choice\n");
