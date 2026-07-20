@@ -78,7 +78,7 @@ int main(void)
 			scanf("A: %d", &numA);
 			scanf("B: %d", &numB);
 			numC = multiplication(numA, numB);
-			printf("Result: %d", numC)
+			printf("Result: %d", numC);
 		} else if (choice == 4)
 		{
 			scanf("A: %d", &numA);
