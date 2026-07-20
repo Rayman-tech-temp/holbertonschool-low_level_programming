@@ -25,7 +25,7 @@ int main(void)
 			printf("B:");
 			scanf("%d", &numB);
 			numC = addition(numA, numB);
-			printf("Result: %d", numC;
+			printf("Result: %d", numC);
 		} else if (choice > 4)
 		{
 			printf("Invalid choice\n");
