@@ -1,4 +1,3 @@
-
 /**
  * reset_to_98 - using a pointer to change
  * the value of a variable passed in this
@@ -12,5 +11,5 @@
 
 void reset_to_98(int *ptr)
 {
-        *ptr = 98;
+	*ptr = 98;
 }
