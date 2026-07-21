@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * create_array - creating and populating an array with specified
  * character passed in arguments.
@@ -14,11 +15,13 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	char *array[size];
+	char *ptr;
+	*ptr = (char*) malloc(size * sizeof(char));
+	unsigned int i;
 
-	for (int i = 0; i <= size - 1; i++)
+	for (i = 0; i <= size - 1; i++)
 	{
-		array[size] = c;
+		*(ptr + i) = c;
 	}
-	return (array);
+	return (ptr);
 }
