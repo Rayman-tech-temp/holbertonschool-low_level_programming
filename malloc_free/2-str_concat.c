@@ -22,7 +22,7 @@ unsigned int count(char *array)
 	{
 		i = i + 1;
 	}
-	return (i + 1);
+	return (i);
 }
 
 char *half_filled(char *pour, char *cup, unsigned int size)
@@ -51,20 +51,20 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	} else if (s2 == NULL)
 	{
-		i = count(s1);
+		i = count(s1) + 1;
 		charArr = (char *) malloc(i * sizeof(char));
 		charArr = half_filled(s1, charArr, i);
 		return (charArr);
 	} else if (s1 == NULL)
 	{
-		i = count(s1);
+		i = count(s1) + 1;
 		charArr = (char *) malloc(i * sizeof(char));
 		charArr = half_filled(s2, charArr, i);
 		return (charArr);
 	}
 	i = count(s1);
 	j = count(s2);
-	length = i + j - 1;
+	length = i + j + 1;
 	charArr = (char *) malloc(length * sizeof(char));
 	if (charArr == NULL)
 		return (NULL);
