@@ -64,7 +64,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	i = count(s1);
 	j = count(s2);
-	length = i + j + 1;
+	length = i + j - 1;
 	charArr = (char *) malloc(length * sizeof(char));
 	if (charArr == NULL)
 		return (NULL);
