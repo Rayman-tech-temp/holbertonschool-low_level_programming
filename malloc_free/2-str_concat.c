@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 		i = i + 1;
 	while (s2[j] != '\0')
 		j = j + 1;
-	length = i + j + 3;
+	length = i + j + 1;
 	charArr = (char *) malloc(length * sizeof(char));
 	if (charArr == NULL)
 		return (NULL);
@@ -42,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		charArr[j] = s1[j];
 	}
-	for (j = 0; j < length; j = j + 1)
+	for (j = 0; j + i < length; j = j + 1)
 	{
 		charArr[i + j] = s2[j];
 	}
