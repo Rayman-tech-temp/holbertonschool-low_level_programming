@@ -2,14 +2,11 @@
 #include <stdio.h>
 
 /**
- * str_concat -linking two strings together from passed args.
+ * count - linking two strings together from passed args.
  *
- * @s1: a pointer to a generic allocated memmory of
+ * @array: a pointer to a generic allocated memmory of
  * a pointer.
- * @s2: a second pointer to a generic allocated
- * memory of a pointer.
- *
- * Return: char *array - a pointer array that contains
+ * Return: unsign int i - a pointer array that contains
  * specified text listed in passed arg.
  */
 
@@ -24,7 +21,14 @@ unsigned int count(char *array)
 	}
 	return (i);
 }
-
+/**
+ * half_filled - stuff and things
+ * @pour: the array pouring it's contents.
+ * @cup: the array recieving the contents of a pour.
+ * @size: how many elements are being put into.
+ *
+ * Return: char *cup - the now half filled cup, which isn't that good tbh.
+ */
 char *half_filled(char *pour, char *cup, unsigned int size)
 {
 	unsigned int i;
@@ -37,6 +41,18 @@ char *half_filled(char *pour, char *cup, unsigned int size)
 	}
 	return (cup);
 }
+
+/**
+ * str_concat -linking two strings together from passed args.
+ *
+ * @s1: a pointer to a generic allocated memmory of
+ * a pointer.
+ * @s2: a second pointer to a generic allocated
+ * memory of a pointer.
+ *
+ * Return: char *array - a pointer array that contains
+ * specified text listed in passed arg.
+ */
 
 char *str_concat(char *s1, char *s2)
 {
