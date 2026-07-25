@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * str_concat -linking two strings together from passed args.
@@ -11,40 +12,69 @@
  * Return: char *array - a pointer array that contains
  * specified text listed in passed arg.
  */
+
+unsigned int count(char *array)
+{
+	unsigned int i;
+
+	i = 0;
+	while (array[i] != '\0')
+	{
+		i = i + 1;
+	}
+	return (i + 1);
+}
+
+char *half_filled(char *pour, char *cup, unsigned int size)
+{
+	unsigned int i;
+
+	i = 0;
+	while (i < size)
+	{
+		cup[i] = pour[i];
+		i = i + 1;
+	}
+	return (cup);
+}
+
 char *str_concat(char *s1, char *s2)
 {
 	char *charArr;
 	unsigned int i;
 	unsigned int j;
+	unsigned int k;
 	unsigned int length;
 
 	if (s1 == NULL && s2 == NULL)
 	{
 		return (NULL);
-	} else if (s1 == NULL || s2 == NULL)
+	} else if (s2 == NULL)
 	{
-		if (s2 == NULL)
-			return (s1);
-		else if (s1 == NULL)
-			return (s2);
-	} else
-	i = 0;
-	j = 0;
-	while (s1[i] != '\0')
-		i = i + 1;
-	while (s2[j] != '\0')
-		j = j + 1;
+		i = count(s1);
+		charArr = (char *) malloc(i * sizeof(char));
+		charArr = half_filled(s1, charArr, i);
+		return (charArr);
+	} else if (s1 == NULL)
+	{
+		i = count(s1);
+		charArr = (char *) malloc(i * sizeof(char));
+		charArr = half_filled(s2, charArr, i);
+		return (charArr);
+	}
+	i = count(s1);
+	j = count(s2);
 	length = i + j + 1;
 	charArr = (char *) malloc(length * sizeof(char));
 	if (charArr == NULL)
 		return (NULL);
-	for (j = 0; j < length - i && s1[j] != '\0'; j = j + 1)
+	for (k = 0; j < length - i && s1[k] != '\0'; k = k + 1)
 	{
-		charArr[j] = s1[j];
+		charArr[k] = s1[k];
 	}
-	for (j = 0; j + i < length; j = j + 1)
+	for (k = 0; k + i < length; k = k + 1)
 	{
-		charArr[i + j] = s2[j];
+		charArr[i + k] = s2[k];
 	}
 	return (charArr);
 }
