@@ -23,9 +23,9 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	} else if (s1 == NULL || s2 == NULL)
 	{
-		if (s1 != NULL && s2 == NULL)
+		if (s2 == NULL)
 			return (s1);
-		else if (s1 == NULL && s2 != NULL)
+		else if (s1 == NULL)
 			return (s2);
 	} else
 	i = 0;
@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 		i = i + 1;
 	while (s2[j] != '\0')
 		j = j + 1;
-	length = i + j + 2;
+	length = i + j + 3;
 	charArr = (char *) malloc(length * sizeof(char));
 	if (charArr == NULL)
 		return (NULL);
