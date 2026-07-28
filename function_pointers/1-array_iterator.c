@@ -19,7 +19,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	funct = action;
 	i = 0;
 	volume = (int) size;
-	while(i < volume)
+	while (i < volume)
 	{
 		funct(array[i]);
 		i = i + 1;
