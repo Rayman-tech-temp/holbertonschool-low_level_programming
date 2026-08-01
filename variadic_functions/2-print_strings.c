@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
- * print_numbers - variadic function printing arguments.
+ * print_strings - variadic function printing arguments.
  * @separator: the character used to seperate the entries.
  * @n: number of items to print.
  *
@@ -21,9 +21,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (i < n)
 	{
 		item = va_arg(arguments, char *);
-		printf("%s", item);
-		if (i < n - 1 && separator != NULL)
+		if (item != NULL)
+		{
+			printf("%s", item);
+		} else if (i < n - 1 && separator != NULL)
 			printf("%s", separator);
+		else if (item == NULL)
+			printf("(nil)");
 		i = i + 1;
 	}
 	printf("\n");
