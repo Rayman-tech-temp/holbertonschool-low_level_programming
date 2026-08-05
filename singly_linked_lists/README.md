@@ -1,0 +1,3 @@
+you have entered theLinked List Zone
+a place where data is not structed by a trusty array
+but created by links to nodes...
