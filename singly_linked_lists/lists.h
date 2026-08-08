@@ -3,7 +3,15 @@
 
 #include <stdio.h>
 #include <stdint.h>
+#include <stdlib.h>
 
+/**
+ * struct list_s - the node structure of the link
+ * list
+ * @str: a char array.
+ * @len: the length of the char array.
+ * @next: the link to the next element.
+ */
 typedef struct list_s
 {
 	char *str;
