@@ -40,7 +40,7 @@ size_t print_list(const list_t *h)
 		count = count + 1;
 		temp = temp->next;
 	}
-
+	printf("[%d] %s\n", temp->len, temp->str);
 	return (count);
 }
 
