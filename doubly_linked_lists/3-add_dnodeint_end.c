@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - a function that adds new
- * node to the start of the list with head.
+ * add_dnodeint_end - a function that adds new
+ * node to the end of the list with head.
  * @head: head of the list to add at the start.
  * @n: value to create with.
  * Return: current - the new node at the start
