@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_dlistint_len - a function that explores the
+ * dlistint_len - a function that explores the
  * the list through the next links.
  * @h: the head of the list to go down.
  * Return: count - a size_t variable of the
