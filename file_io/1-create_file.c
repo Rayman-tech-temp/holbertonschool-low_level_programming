@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename != NULL)
 	{
-		fd = open(filename, O_RDWR | O_CREAT, 0600 | O_TRUNC);
+		fd = open(filename, O_RDWR | O_CREAT, 0600 | O_APPEND);
 		if (fd == -1)
 			return (state);
 
