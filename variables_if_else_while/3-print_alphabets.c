@@ -13,12 +13,12 @@ int main(void)
 
 	while (letter != 91)
 	{
-		putchar(letter);
-		letter++;
-		if (letter == 122)
+		if (letter == 123)
 		{
 			letter = 65;
 		}
+		putchar(letter);
+		letter++;
 	}
 	putchar('\n');
 	return (0);
