@@ -8,13 +8,14 @@
  */
 int print_last_digit(int n)
 {
-	char array[] = {'0','1','2','3','4','5','6','7','8','9'};
+	char array[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 	int temp;
 
-	if (n < 0)
-		n = n * -1;
-
 	temp = n % 10;
+
+	if (n < 0)
+		temp = (n * -1) % 10;
+
 	_putchar(array[temp]);
 
 	return (temp);
