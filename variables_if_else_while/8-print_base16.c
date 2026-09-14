@@ -14,20 +14,15 @@ int main(void)
 
 	while (digit != 103)
 	{
-		if (digit <= 57)
+		if (digit <= 57 || digit >= 97)
 		{
 			putchar(digit);
-			digit++;
 		} else if (digit == 58)
 		{
 			digit = 97;
 			putchar(digit);
-			digit++;
-		} else
-		{
-			putchar(digit);
-			digit++;
 		}
+		digit++;
 	}
 
 	putchar('\n');
