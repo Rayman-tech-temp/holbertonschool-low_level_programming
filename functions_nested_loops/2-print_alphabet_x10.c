@@ -8,11 +8,19 @@
 void print_alphabet_x10(void)
 {
 	int i;
+	int letter;
 
 	i = 0;
+	letter = 97;
 	while (i < 10)
 	{
-		print_alphabet();
+		while (letter < 123)
+		{
+			_putchar(letter);
+			letter++;
+		}
+
+		_putchar('\n');
 		i = i + 1;
 	}
 }
