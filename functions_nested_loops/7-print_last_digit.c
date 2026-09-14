@@ -15,6 +15,8 @@ int print_last_digit(int n)
 
 	if (n < 0)
 		temp = (n * -1) % 10;
+	else if (n == INT_MIN)
+		temp = 8;
 
 	_putchar(array[temp]);
 
