@@ -9,7 +9,7 @@ int _islower(int c)
 {
 	int output;
 
-	output = -1;
+	output = 0;
 	if (c >= 65 && c <= 90)
 		output = 0;
 
