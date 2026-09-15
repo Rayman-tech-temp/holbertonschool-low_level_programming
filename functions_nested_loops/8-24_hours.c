@@ -20,7 +20,7 @@ void jack_bauer(void)
 			else
 				printf("%d:", hours);
 
-			if (hours < 10)
+			if (minutes < 10)
 				printf("0%d\n", minutes);
 			else
 				printf("%d\n", minutes);
