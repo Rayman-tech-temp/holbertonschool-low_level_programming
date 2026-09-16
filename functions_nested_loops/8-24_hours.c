@@ -7,33 +7,50 @@
 
 void jack_bauer(void)
 {
-	int minutes, hours;
+	int minutes, hours, tensminute, tenshour;
 
-	minutes = 0;
-	hours = 0;
-	while (hours <= 23)
+	tensminute = 48;
+	minutes = 48;
+	tenshour = 48;
+	hours = 48;
+	while (tenshour <= 50)
 	{
-		while (minutes < 60)
+		while (tensminute < 54 && tensminute >= 48)
 		{
-			if (hours < 10)
-				printf("0%d:", hours);
-			else
-				printf("%d:", hours);
+			_putchar(tenshour);
+			_putchar(hours);
+			_putchar(':');
+			_putchar(tensminute);
+			_putchar(minutes);
+			_putchar('\n');
 
-			if (minutes < 10)
-				printf("0%d\n", minutes);
-			else
-				printf("%d\n", minutes);
 			minutes = minutes + 1;
+			if (minutes > 57)
+			{
+				minutes = 48;
+				tensminute = tensminute + 1;
+			}
 		}
-		minutes = 0;
-		hours = hours + 1;
-		if (hours < 24)
+		if (tenshour == 50 && hours == 51)
 		{
-			if (hours < 10)
-				printf("0%d:00\n", hours);
-			else
-				printf("%d:00\n", hours);
+			tenshour = tenshour + 1;
+			hours = 48;
+		}
+
+		tensminute = 48;
+		minutes = 48;
+		hours = hours + 1;
+
+		if (hours > 57)
+		{
+			hours = 48;
+			tenshour = tenshour + 1;
+			_putchar(tenshour);
+			_putchar(hours);
+			_putchar(':');
+			_putchar(tensminute);
+			_putchar(minutes);
+			_putchar('\n');
 		}
 	}
 }
